@@ -27,6 +27,7 @@ void setup() {
     std::printf("Target MCU: Raspberry Pi Pico 2 W (RP2350)\n");
     std::printf("CPU Architecture: ARM Cortex-M33\n");
     std::printf("Runtime: Direct C++ TensorFlow Lite Micro Engine\n");
+    std::printf("SIH2672 – Hero Arise Voice Activator – Ready\n");
     #if (CURRENT_RUN_MODE == RUN_MODE_LIVE_MIC)
         std::printf("Operational Mode: LIVE INMP441 I2S MICROPHONE [HARDWARE VALIDATION PENDING]\n");
     #else
