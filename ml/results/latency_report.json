@@ -1,0 +1,21 @@
+{
+  "mfe_min_ms": 0.892,
+  "mfe_mean_ms": 3.577,
+  "mfe_median_ms": 1.562,
+  "mfe_p95_ms": 8.175,
+  "mfe_max_ms": 62.675,
+  "float32_cnn_min_ms": 6.335,
+  "float32_cnn_mean_ms": 27.543,
+  "float32_cnn_median_ms": 12.352,
+  "float32_cnn_p95_ms": 58.487,
+  "float32_cnn_max_ms": 604.906,
+  "int8_cnn_min_ms": 0.102,
+  "int8_cnn_mean_ms": 0.334,
+  "int8_cnn_median_ms": 0.169,
+  "int8_cnn_p95_ms": 0.844,
+  "int8_cnn_max_ms": 9.315,
+  "end_to_end_median_ms": 1.746,
+  "end_to_end_p95_ms": 9.183,
+  "target_latency_ms": 200,
+  "latency_status": "PASS"
+}
