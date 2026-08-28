@@ -1,17 +1,22 @@
 #ifndef PICO2W_CONFIG_H
 #define PICO2W_CONFIG_H
 
+// Operational Mode Selection Configuration
+#define RUN_MODE_TEST_VECTOR 0  // Deterministic precomputed INT8 test vector regression mode
+#define RUN_MODE_LIVE_MIC    1  // Live INMP441 I2S digital microphone audio capture mode
+#define CURRENT_RUN_MODE     RUN_MODE_TEST_VECTOR  // Default run mode for regression testing
+
 // Microcontroller Hardware Pins for Raspberry Pi Pico 2 W (RP2350)
-#define PIN_OLED_SDA       4   // RP2350 I2C0 SDA (GP4)
-#define PIN_OLED_SCL       5   // RP2350 I2C0 SCL (GP5)
-#define PIN_LED_GREEN      14  // GPIO14 for Wake Word Alert LED
-#define PIN_LED_RED        15  // GPIO15 for Listening Idle LED
-#define PIN_BUZZER         16  // GPIO16 for Piezo Buzzer Alert
+#define PIN_OLED_SDA       4   // RP2350 I2C0 SDA (GP4, Pin 6)
+#define PIN_OLED_SCL       5   // RP2350 I2C0 SCL (GP5, Pin 7)
+#define PIN_LED_GREEN      14  // GPIO14 for Wake Word Alert LED (Pin 19)
+#define PIN_LED_RED        15  // GPIO15 for Listening Idle LED (Pin 20)
+#define PIN_BUZZER         16  // GPIO16 for Piezo Buzzer Alert (Pin 21)
 
 // Target I2S Digital Microphone Pins (INMP441) for Pico 2 W
-#define PIN_I2S_SCK        26  // I2S Bit Clock (GP26)
-#define PIN_I2S_WS         27  // I2S Word Select / LR Clock (GP27)
-#define PIN_I2S_SD         28  // I2S Serial Data Out (GP28)
+#define PIN_I2S_SCK        26  // I2S Bit Clock (GP26, Pin 31)
+#define PIN_I2S_WS         27  // I2S Word Select / LR Clock (GP27, Pin 32)
+#define PIN_I2S_SD         28  // I2S Serial Data Out (GP28, Pin 34)
 
 // Display Configuration
 #define OLED_I2C_ADDRESS   0x3C
