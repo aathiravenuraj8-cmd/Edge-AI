@@ -12,6 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR))
 
 from ml.src.config import PROCESSED_DATA_DIR, MODELS_DIR, RESULTS_DIR, CLASS_MAP
+from ml.src.decision import DecisionEngine
 from scripts.extract_mfe import compute_mfe
 
 def run_benchmarks():
@@ -23,6 +24,9 @@ def run_benchmarks():
     if not keras_path.exists() or not int8_tflite_path.exists():
         print("ERROR: Required model files missing!")
         return False
+
+    # Instantiate Priority 2 & 3 DecisionEngine
+    decision_engine = DecisionEngine()
 
     # Load Float32 model and INT8 TFLite interpreter
     keras_model = tf.keras.models.load_model(str(keras_path))
@@ -66,7 +70,9 @@ def run_benchmarks():
     decision_times = []
     end_to_end_times = []
 
-    for _ in range(N_RUNS):
+    latest_monitor_str = ""
+
+    for i in range(N_RUNS):
         # Stage B: MFE Feature Extraction
         t0 = time.perf_counter()
         mfe_feat = compute_mfe(test_audio)
@@ -85,11 +91,34 @@ def run_benchmarks():
         raw_out = interpreter.get_tensor(out_details["index"])[0]
         t3 = time.perf_counter()
         
-        # Stage E: Decision Logic (<5ms)
+        # Stage E: Decision Logic & Live Monitor Telemetry
         dequant_out = (raw_out.astype(np.float32) - out_zero_point) * out_scale
-        target_prob = dequant_out[0]
-        decision = (target_prob >= 0.80)
+        target_prob = float(dequant_out[0])
+        pred_class = int(np.argmax(dequant_out))
+        
+        # VAD Energy check (RMS of input audio)
+        rms = np.sqrt(np.mean(test_audio.astype(np.float32)**2))
+        vad_speech = bool(rms > 100.0)
+
+        # Real software pipeline latency (PC)
+        t_start_software = t0
         t4 = time.perf_counter()
+        software_latency_ms = (t4 - t_start_software) * 1000.0
+
+        current_sim_time_ms = 1000 + (i * 50)
+        dec_res = decision_engine.process_prediction(
+            pred_class=pred_class, 
+            target_conf=target_prob, 
+            current_time_ms=current_sim_time_ms, 
+            vad_speech=vad_speech
+        )
+        
+        latest_monitor_str = decision_engine.format_live_monitor(
+            res=dec_res, 
+            target_conf=target_prob, 
+            vad_speech=vad_speech, 
+            latency_ms=software_latency_ms
+        )
 
         mfe_ms = (t1 - t0) * 1000.0
         float_ms = (t2 - t1) * 1000.0
@@ -102,6 +131,9 @@ def run_benchmarks():
         int8_cnn_times.append(int8_ms)
         decision_times.append(dec_ms)
         end_to_end_times.append(e2e_ms)
+
+    print("\nLATEST LIVE MONITOR DISPLAY (Iteration 1000 Sample):")
+    print(latest_monitor_str)
 
     def calc_stats(arr):
         return {

@@ -15,7 +15,6 @@ public:
     bool begin();
 
     // Reads raw 16 kHz mono 16-bit PCM audio samples into target buffer
-    // Returns true if requested number of samples were read successfully
     bool read_samples(int16_t* buffer, size_t num_samples);
 
     // Returns available unread PCM sample count in ring buffer
@@ -23,6 +22,13 @@ public:
 
     // Returns whether live microphone capture is active vs test vector mode
     bool isLiveMicActive() const;
+
+    // Diagnostic Telemetry Methods for Live Audio Validation
+    size_t getSampleCount() const;
+    int16_t getMinSample() const;
+    int16_t getMaxSample() const;
+    float getRMSLevel() const;
+    float getBufferFillPercentage() const;
 
 private:
     bool initialized;
