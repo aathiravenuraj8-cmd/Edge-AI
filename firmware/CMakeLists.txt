@@ -3,13 +3,13 @@ cmake_minimum_required(VERSION 3.13)
 # Include Pico SDK function definitions
 include(pico_sdk_import.cmake OPTIONAL)
 
-project(hero_arise_pico2w C CXX ASM)
+project(hero_arise_adiy_rp2040 C CXX ASM)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
-# Target Board: Raspberry Pi Pico 2 W (RP2350)
-set(PICO_BOARD pico2_w CACHE STRING "Board type")
+# Target Board: Standard RP2040 Pico
+set(PICO_BOARD pico CACHE STRING "Board type")
 
 # Initialize Raspberry Pi Pico SDK
 pico_sdk_init()
@@ -32,10 +32,10 @@ set(SOURCES
 )
 
 # Add Executable Target
-add_executable(hero_arise_pico2w ${SOURCES})
+add_executable(hero_arise_adiy_rp2040 ${SOURCES})
 
-# Target Link Libraries (Pico SDK stdlib, hardware I2C, hardware GPIO)
-target_link_libraries(hero_arise_pico2w
+# Target Link Libraries
+target_link_libraries(hero_arise_adiy_rp2040
     pico_stdlib
     hardware_gpio
     hardware_i2c
@@ -44,8 +44,8 @@ target_link_libraries(hero_arise_pico2w
 )
 
 # Enable USB CDC Serial output, disable UART stdout
-pico_enable_stdio_usb(hero_arise_pico2w 1)
-pico_enable_stdio_uart(hero_arise_pico2w 0)
+pico_enable_stdio_usb(hero_arise_adiy_rp2040 1)
+pico_enable_stdio_uart(hero_arise_adiy_rp2040 0)
 
-# Create UF2 binary image for flashing Pico 2 W
-pico_add_extra_outputs(hero_arise_pico2w)
+# Create UF2 binary image for flashing RP2040
+pico_add_extra_outputs(hero_arise_adiy_rp2040)

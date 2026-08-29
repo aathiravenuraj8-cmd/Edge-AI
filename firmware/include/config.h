@@ -4,7 +4,7 @@
 // Operational Mode Selection Configuration
 #define RUN_MODE_TEST_VECTOR 0  // Deterministic precomputed INT8 test vector regression mode
 #define RUN_MODE_LIVE_MIC    1  // Live INMP441 I2S digital microphone audio capture mode
-#define CURRENT_RUN_MODE     RUN_MODE_TEST_VECTOR  // Default run mode for regression testing
+#define CURRENT_RUN_MODE    RUN_MODE_LIVE_MIC  // Deterministic precomputed INT8 test vector regression mode
 
 // Microcontroller Hardware Pins for Raspberry Pi Pico 2 W (RP2350)
 #define PIN_OLED_SDA       4   // RP2350 I2C0 SDA (GP4, Pin 6)

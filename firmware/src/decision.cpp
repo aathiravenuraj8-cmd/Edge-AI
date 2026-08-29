@@ -1,5 +1,7 @@
 #include "decision.h"
 #include <cstdio>
+#include "pico/stdlib.h"
+#include "../include/config.h"
 
 DecisionEngine::DecisionEngine() 
     : activated(false), consecutive_hits(0), cooldown_until_ms(0) {}
@@ -10,6 +12,20 @@ bool DecisionEngine::begin() {
     activated = false;
     consecutive_hits = 0;
     cooldown_until_ms = 0;
+
+    // Initialize LED and Buzzer pins as outputs
+    gpio_init(PIN_LED_GREEN);
+    gpio_set_dir(PIN_LED_GREEN, GPIO_OUT);
+    gpio_init(PIN_LED_RED);
+    gpio_set_dir(PIN_LED_RED, GPIO_OUT);
+    gpio_init(PIN_BUZZER);
+    gpio_set_dir(PIN_BUZZER, GPIO_OUT);
+
+    // Set initial state: Red LED on (listening), Green LED and buzzer off
+    gpio_put(PIN_LED_GREEN, 0);
+    gpio_put(PIN_LED_RED, 1);
+    gpio_put(PIN_BUZZER, 0);
+
     return true;
 }
 
@@ -53,12 +69,21 @@ void DecisionEngine::processPrediction(int pred_class, float target_conf, uint32
 void DecisionEngine::updateActuators(int pred_class, float target_conf) {
     if (activated) {
         std::printf("[ACTIVATION] WAKE WORD DETECTED! Class: Hero Arise | Conf: %.2f%%\n", target_conf * 100.0f);
+        gpio_put(PIN_LED_GREEN, 1);
+        gpio_put(PIN_LED_RED, 0);
+        gpio_put(PIN_BUZZER, 1);
     } else if (consecutive_hits > 0) {
         std::printf("[CONFIRMING] Wake confirmation: %d/%d\n", consecutive_hits, CONFIRMATION_COUNT);
+        gpio_put(PIN_LED_GREEN, 0);
+        gpio_put(PIN_LED_RED, 1);
+        gpio_put(PIN_BUZZER, 0);
     } else {
         std::printf("[IDLE] Listening... Class: %s | Target Conf: %.2f%%\n", 
                     (pred_class == CLASS_ID_UNKNOWN ? "Unknown" : "Noise"), 
                     target_conf * 100.0f);
+        gpio_put(PIN_LED_GREEN, 0);
+        gpio_put(PIN_LED_RED, 1);
+        gpio_put(PIN_BUZZER, 0);
     }
 }
 

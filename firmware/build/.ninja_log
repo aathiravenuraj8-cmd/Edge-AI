@@ -1,0 +1,135 @@
+# ninja log v7
+25	130	8096829060418344	pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj	3530138025eadbbd
+176	465	8096829064601661	pico-sdk/src/rp2040/boot_stage2/bs2_default.elf	f01c5795a834f8b
+176	465	8096829064601661	pico-sdk/src/rp2040/boot_stage2/bs2_default.dis	f01c5795a834f8b
+176	465	8096829064601661	D:/SIH 2026/Voice_Activator_Project/firmware/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.dis	f01c5795a834f8b
+466	587	8096829065898940	pico-sdk/src/rp2040/boot_stage2/bs2_default.bin	a8ed848a121e32ce
+466	587	8096829065898940	D:/SIH 2026/Voice_Activator_Project/firmware/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin	a8ed848a121e32ce
+587	746	8096829067419551	pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S	5f2115a3ca6e12e6
+587	746	8096829067419551	D:/SIH 2026/Voice_Activator_Project/firmware/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S	5f2115a3ca6e12e6
+918	1288	8096829069349632	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj	caae8528428e6bd6
+870	1307	8096829068870051	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_platform_common/common.c.obj	579829b9d9385bff
+861	1332	8096829068777295	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2040/pico_platform/platform.c.obj	7ffa7a8636ead94d
+889	1346	8096829069048465	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_platform_panic/custom_panic_function.S.obj	75743201b21c828c
+843	1361	8096829068610560	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj	3c091ee77805212e
+908	1378	8096829069247551	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj	292238fffde029a3
+899	1390	8096829069158080	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/common/hardware_claim/claim.c.obj	ef6e7efab0e2f249
+791	1402	8096829068079227	CMakeFiles/hero_arise_adiy_rp2040.dir/src/main.cpp.obj	4902d63bec2238cc
+834	1414	8096829068507531	CMakeFiles/hero_arise_adiy_rp2040.dir/src/decision.cpp.obj	87785081ce8520ae
+880	1446	8096829068972594	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj	532d6f01f9975554
+1308	1638	8096829073368683	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj	b9d533aefd19e64d
+1349	1784	8096829073661183	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/common/pico_sync/lock_core.c.obj	e9f3cfedf6dc502
+1379	1800	8096829073954402	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/common/pico_sync/critical_section.c.obj	cc5df876012521b2
+1334	1824	8096829073522231	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/common/pico_sync/sem.c.obj	cb1bee12a79f1fa6
+1402	1836	8096829074192082	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/common/pico_time/timeout_helper.c.obj	19195180507a2f5e
+852	1848	8096829068689591	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj	e093058b53f173b8
+815	1861	8096829068316467	CMakeFiles/hero_arise_adiy_rp2040.dir/src/mfe.cpp.obj	4c8bd0e1a3d651b0
+825	1886	8096829068423497	CMakeFiles/hero_arise_adiy_rp2040.dir/src/model_runner.cpp.obj	4055238fc9e38c10
+1640	1954	8096829076570525	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/common/pico_util/fixed_bitset.c.obj	c516547804223f4c
+1446	1966	8096829074638261	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/common/pico_util/datetime.c.obj	81f53081bb4af83b
+1296	1987	8096829073153483	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj	f5a3452dbb729ffc
+1362	2013	8096829073795695	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/common/pico_sync/mutex.c.obj	290d9b13fc14a3b1
+804	2124	8096829068216544	CMakeFiles/hero_arise_adiy_rp2040.dir/src/audio_capture.cpp.obj	dba018b377a4b556
+1849	2222	8096829078661190	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj	d91fd963b9abd88e
+1862	2242	8096829078788853	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj	8ebbc4632ba1bcec
+1414	2273	8096829074312323	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj	359b23d8a858529f
+1954	2285	8096829079701049	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj	569044803cf3903a
+2013	2300	8096829080309307	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.obj	e7e3acb40753e3af
+1803	2313	8096829078308940	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/common/pico_util/queue.c.obj	b0d8d06689cce543
+1966	2323	8096829079825157	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj	3cf71112bfb5ae7
+1988	2333	8096829080050324	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.obj	66f266a4286897dc
+1825	2357	8096829078420542	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj	9cf292f9e7247ad
+1887	2379	8096829079035453	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj	36c9d2e598067007
+2125	2511	8096829081428529	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_flash/flash.c.obj	ff0eefc68c1d671c
+2242	2522	8096829082583968	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj	15c27bf2eda4c805
+2333	2587	8096829083505359	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj	b392d3ef27909338
+2275	2597	8096829082908297	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj	8d52bc2f1d5ca22
+2314	2647	8096829083314198	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj	e3d7d2343c4cde4c
+2223	2657	8096829082385020	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj	9ea6047e7bb3f3d0
+1786	2669	8096829078068545	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/common/pico_util/pheap.c.obj	fc18f2607baf215a
+2380	2680	8096829083959529	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj	194d2d5bcabfd311
+2358	2694	8096829083751469	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj	cd59b035f0a49822
+1390	2709	8096829074077915	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/common/pico_time/time.c.obj	114270589001f35e
+2300	2728	8096829083175270	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj	5be2234c2c884b7c
+2286	2741	8096829083021676	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj	d337e8e6579e9215
+1836	2756	8096829078537629	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj	fd8e5bcb9e458641
+2323	2767	8096829083408409	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj	68c9b520710fa34e
+2597	2779	8096829086140427	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj	891ea6b3423236a2
+2587	2791	8096829086045128	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj	3eae60f1f81fb4f7
+2647	2880	8096829086636557	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj	db80d62be172e166
+2511	2944	8096829085275748	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj	ea42912e05908060
+2713	2957	8096829087317530	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj	5c87155d939cdc24
+2681	2972	8096829086973888	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj	77aef55a0781ad0a
+2756	3045	8096829087734129	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj	c748cc213d7f63ad
+2658	3071	8096829086736840	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj	e133800043cf7ad
+2695	3082	8096829087138567	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_malloc/malloc.c.obj	6d4f25fde0e10fe4
+2779	3093	8096829087969426	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj	fa0e01b47ec6ff76
+2743	3179	8096829087595002	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.obj	bd5463b9e2262a58
+2881	3256	8096829088985312	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c.obj	7ceae9e6f4d62014
+2791	3319	8096829088084898	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj	93efd5a33e70a5ef
+3082	3420	8096829090994328	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.obj	e7e03cd1c3f97cc0
+3046	3469	8096829090618141	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj	e867142f2ef4045d
+2972	3480	8096829089895613	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj	325c2a326eccadd3
+2729	3536	8096829087472056	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_atomic/atomic.c.obj	808f949ecaec0e4c
+2957	3550	8096829089736282	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj	c715256aae66db4e
+3093	3595	8096829091107565	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.c.obj	5ae1876e79bee29f
+3071	3612	8096829090872832	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj	f2eb49f847bb6ab2
+2944	3700	8096829089610414	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj	b6c6abdb54231dcf
+2670	3764	8096829086871665	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_float/float_math.c.obj	3c0604534142ac14
+3470	3811	8096829094862633	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj	c273476f49c7b1e
+2523	3823	8096829085392967	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_double/double_math.c.obj	356f67f2f9f2da74
+3536	3832	8096829095536568	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj	62bba8145ce25597
+3420	3885	8096829094377765	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj	849fc9b03d253857
+3550	3897	8096829095669639	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj	5f48153d23ba8b4a
+3595	3909	8096829096116477	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj	362b99d590173466
+3612	3922	8096829096300295	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj	ca350edcfddaafa
+3258	3936	8096829092744868	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj	111fb38b44c83cc4
+3700	3950	8096829097168923	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj	1999a0e5897811cc
+3180	4042	8096829091959081	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj	52c75582a210be2a
+3764	4052	8096829097811292	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj	4bc117a7f05d63f8
+2768	4101	8096829087840104	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_printf/printf.c.obj	dc0f2760a49d6ef5
+3812	4112	8096829098278271	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj	632c6c25bce188b3
+3823	4120	8096829098396486	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj	c85544c0a173c58b
+3832	4161	8096829098486482	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj	f4cd118e04a4113b
+3885	4166	8096829099030452	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj	ed9ef24bb0e0540a
+3480	4180	8096829094981526	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj	2f26ab5640f74533
+4102	4226	8096829101176745	pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.obj	23801eab53e8d445
+3922	4272	8096829099384738	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj	b240b5aa15025ede
+3936	4306	8096829099528507	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.obj	4d915dd84cf39866
+3319	4350	8096829093353490	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/device/usbd.c.obj	e7fb22bb6e9fbe68
+4053	4400	8096829100696816	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj	3a6a7c4ba401980c
+3898	4448	8096829099143095	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/tusb.c.obj	dddd3c00180bb941
+3952	4467	8096829099686786	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj	8cdb0a0f2298dfed
+3909	4500	8096829099263341	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj	6543df93817b29cd
+4042	4701	8096829100586666	CMakeFiles/hero_arise_adiy_rp2040.dir/D_/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj	648124d96cfc6e87
+4701	5633	8096829116267855	hero_arise_adiy_rp2040.elf	c38f05fca35e35e9
+4701	5633	8096829116267855	hero_arise_adiy_rp2040.dis	c38f05fca35e35e9
+4701	5633	8096829116267855	hero_arise_adiy_rp2040.hex	c38f05fca35e35e9
+4701	5633	8096829116267855	hero_arise_adiy_rp2040.bin	c38f05fca35e35e9
+4701	5633	8096829116267855	D:/SIH 2026/Voice_Activator_Project/firmware/build/hero_arise_adiy_rp2040.dis	c38f05fca35e35e9
+4701	5633	8096829116267855	D:/SIH 2026/Voice_Activator_Project/firmware/build/hero_arise_adiy_rp2040.hex	c38f05fca35e35e9
+4701	5633	8096829116267855	D:/SIH 2026/Voice_Activator_Project/firmware/build/hero_arise_adiy_rp2040.bin	c38f05fca35e35e9
+31	346	8096835998680484	CMakeFiles/hero_arise_adiy_rp2040.dir/src/main.cpp.obj	4902d63bec2238cc
+72	409	8096835999109899	CMakeFiles/hero_arise_adiy_rp2040.dir/src/decision.cpp.obj	87785081ce8520ae
+52	574	8096835998905460	CMakeFiles/hero_arise_adiy_rp2040.dir/src/mfe.cpp.obj	4c8bd0e1a3d651b0
+61	577	8096835998992285	CMakeFiles/hero_arise_adiy_rp2040.dir/src/model_runner.cpp.obj	4055238fc9e38c10
+41	664	8096835998792414	CMakeFiles/hero_arise_adiy_rp2040.dir/src/audio_capture.cpp.obj	dba018b377a4b556
+664	1107	8096836009266400	hero_arise_adiy_rp2040.elf	c38f05fca35e35e9
+664	1107	8096836009266400	hero_arise_adiy_rp2040.dis	c38f05fca35e35e9
+664	1107	8096836009266400	hero_arise_adiy_rp2040.hex	c38f05fca35e35e9
+664	1107	8096836009266400	hero_arise_adiy_rp2040.bin	c38f05fca35e35e9
+664	1107	8096836009266400	D:/SIH 2026/Voice_Activator_Project/firmware/build/hero_arise_adiy_rp2040.dis	c38f05fca35e35e9
+664	1107	8096836009266400	D:/SIH 2026/Voice_Activator_Project/firmware/build/hero_arise_adiy_rp2040.hex	c38f05fca35e35e9
+664	1107	8096836009266400	D:/SIH 2026/Voice_Activator_Project/firmware/build/hero_arise_adiy_rp2040.bin	c38f05fca35e35e9
+31	330	8096836630557377	CMakeFiles/hero_arise_adiy_rp2040.dir/src/main.cpp.obj	4902d63bec2238cc
+75	397	8096836630995956	CMakeFiles/hero_arise_adiy_rp2040.dir/src/decision.cpp.obj	87785081ce8520ae
+55	521	8096836630805880	CMakeFiles/hero_arise_adiy_rp2040.dir/src/mfe.cpp.obj	4c8bd0e1a3d651b0
+66	584	8096836630904916	CMakeFiles/hero_arise_adiy_rp2040.dir/src/model_runner.cpp.obj	4055238fc9e38c10
+43	630	8096836630672844	CMakeFiles/hero_arise_adiy_rp2040.dir/src/audio_capture.cpp.obj	dba018b377a4b556
+631	1064	8096836640744616	hero_arise_adiy_rp2040.elf	c38f05fca35e35e9
+631	1064	8096836640744616	hero_arise_adiy_rp2040.dis	c38f05fca35e35e9
+631	1064	8096836640744616	hero_arise_adiy_rp2040.hex	c38f05fca35e35e9
+631	1064	8096836640744616	hero_arise_adiy_rp2040.bin	c38f05fca35e35e9
+631	1064	8096836640744616	D:/SIH 2026/Voice_Activator_Project/firmware/build/hero_arise_adiy_rp2040.dis	c38f05fca35e35e9
+631	1064	8096836640744616	D:/SIH 2026/Voice_Activator_Project/firmware/build/hero_arise_adiy_rp2040.hex	c38f05fca35e35e9
+631	1064	8096836640744616	D:/SIH 2026/Voice_Activator_Project/firmware/build/hero_arise_adiy_rp2040.bin	c38f05fca35e35e9

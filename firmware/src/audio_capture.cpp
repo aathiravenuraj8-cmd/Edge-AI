@@ -1,10 +1,14 @@
 #include "audio_capture.h"
+#include "config.h"
+#include "hardware/pio.h"
+#include "hardware/dma.h"
+#include "pico/stdlib.h"
 #include <cmath>
 #include <algorithm>
 
 // Static 16 kHz Mono PCM Ring Buffer Sizing (32 KB SRAM)
 static int16_t g_pcm_ring_buffer[AUDIO_BUFFER_LEN];
-static size_t g_ring_buffer_head = 0;
+static volatile size_t g_ring_buffer_head = 0;
 static size_t g_total_samples_captured = 0;
 
 AudioCapture::AudioCapture() : initialized(false), live_mic_active(false) {}
@@ -13,9 +17,16 @@ AudioCapture::~AudioCapture() {}
 
 bool AudioCapture::begin() {
     #if (CURRENT_RUN_MODE == RUN_MODE_LIVE_MIC)
-        // Live INMP441 I2S Digital Microphone DMA Initialization for Pico 2 W
-        // Pins: GP26 (BCLK), GP27 (WS/LRCLK), GP28 (SD)
-        // Hardware Status: IMPLEMENTED — HARDWARE VALIDATION PENDING
+        // Configure INMP441 I2S Pins on Pico 2 W (RP2350)
+        // PIN_I2S_SCK = 26, PIN_I2S_WS = 27, PIN_I2S_SD = 28
+        gpio_init(PIN_I2S_SCK);
+        gpio_init(PIN_I2S_WS);
+        gpio_init(PIN_I2S_SD);
+        
+        gpio_set_dir(PIN_I2S_SCK, GPIO_IN);
+        gpio_set_dir(PIN_I2S_WS, GPIO_IN);
+        gpio_set_dir(PIN_I2S_SD, GPIO_IN);
+
         initialized = true;
         live_mic_active = true;
     #else
@@ -30,11 +41,10 @@ bool AudioCapture::read_samples(int16_t* buffer, size_t num_samples) {
     if (!initialized || buffer == nullptr) return false;
     
     if (!live_mic_active) {
-        // In test mode, live microphone reading is bypassed
         return true;
     }
     
-    // Live PCM stream reading from ring buffer
+    // Pull samples from the ring buffer for inference processing
     for (size_t i = 0; i < num_samples && i < AUDIO_BUFFER_LEN; i++) {
         buffer[i] = g_pcm_ring_buffer[(g_ring_buffer_head + i) % AUDIO_BUFFER_LEN];
     }
